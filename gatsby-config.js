@@ -1,6 +1,6 @@
 module.exports = 
 {
-  pathPrefix: "/suru-plus-folders",
+  pathPrefix: "/curso-de-gatsbyjs",
   siteMetadata: 
   {
     title: `Blog do Gustavo Costa`,
