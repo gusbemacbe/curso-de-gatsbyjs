@@ -1,0 +1,70 @@
+{
+  "name": "suru-plus-folders",
+  "description": "Suru++ Folder is a bash script that allows changing the color of folders in the families Adwaita, Suru and Yaru",
+  "version": "4.0.0",
+  "author": "Gustavo Reis",
+  "dependencies": {
+    "@mdx-js/mdx": "^1.6.16",
+    "@mdx-js/react": "^1.6.16",
+    "gatsby": "2.24.37",
+    "gatsby-link": "^2.4.13",
+    "gatsby-plugin-i18n": "^1.0.1",
+    "gatsby-plugin-mdx": "^1.2.34",
+    "gatsby-plugin-no-javascript": "^2.0.5",
+    "gatsby-plugin-react-helmet": "^3.3.10",
+    "gatsby-source-filesystem": "^2.3.24",
+    "gatsby-transformer-json": "^2.4.11",
+    "gh-pages": "^3.1.0",
+    "intl": "^1.2.5",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "react-helmet": "^6.1.0",
+    "react-intl": "^2.8.0",
+    "react-router-dom": "5.2.0"
+  },
+  "keywords": [
+    "adwaita",
+    "adwaita-plus",
+    "color",
+    "colors",
+    "colour",
+    "colours",
+    "customisation",
+    "customization",
+    "folder",
+    "folders",
+    "gatsby",
+    "linux",
+    "suru",
+    "suru-plus",
+    "ubuntu",
+    "yaru",
+    "yaru-plus"
+  ],
+  "license": "MIT",
+  "main": "n/a",
+  "scripts": {
+    "deploy_public": "gatsby build && gh-pages -d public",
+    "deploy_public_pref_unugly": "gatsby build --prefix-paths --no-uglify && gh-pages -d public",
+    "deploy_master": "gatsby build && gh-pages -d public -b master",
+    "build": "gatsby build",
+    "clean": "gatsby clean",
+    "develop": "killall -9 node && gatsby develop -H gusbemacbe.pt -p 1989",
+    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"**/*.{html,md}\"",
+    "serve": "gatsby serve",
+    "start": "npm run clean && npm run develop",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "testj": "jest"
+  },
+  "devDependencies": {
+    "codecov": "^3.0.0",
+    "jest": "^24.0.0",
+    "prettier": "^1.16.1"
+  },
+  "jest": {
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/.cache/"
+    ]
+  }
+}

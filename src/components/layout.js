@@ -3,7 +3,6 @@
 import { jsx, Styled, useColorMode } from 'theme-ui'
 import { Link } from "gatsby"
 import Button from './button'
-import SelectLanguage from './SelectLanguage';
 
 const ListLink = props => (
   <li style={{ display: `inline-block`, marginRight: `1rem` }}>
